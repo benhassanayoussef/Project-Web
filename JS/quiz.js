@@ -101,7 +101,7 @@ const questions = [
     }
 ];
 
-// Shuffle function (Fisher-Yates)
+
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -109,7 +109,7 @@ function shuffle(array) {
     }
 }
 
-// Generate quiz
+
 const quizForm = document.getElementById("quizForm");
 
 questions.forEach((q, index) => {
@@ -133,7 +133,7 @@ questions.forEach((q, index) => {
     quizForm.appendChild(div);
 });
 
-// Submit quiz
+
 function submitQuiz() {
     let score = 0;
     let feedback = "<h4>Correct Answers:</h4><ul>";
@@ -153,3 +153,4 @@ function submitQuiz() {
 
     document.getElementById("answers").innerHTML = feedback;
 }
+
